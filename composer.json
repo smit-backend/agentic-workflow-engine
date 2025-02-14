@@ -1,0 +1,28 @@
+{
+    "name": "smit-backend/agentic-workflow-engine",
+    "description": "Autonomous multi-agent task execution framework with dynamic tool discovery, step-by-step planners, and conversational memory buffers.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "email": "sync2sale@gmail.com",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\AgentFlow\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\AgentFlow\\PackageServiceProvider"
+            ]
+        }
+    }
+}
